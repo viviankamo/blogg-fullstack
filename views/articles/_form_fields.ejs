@@ -1,0 +1,15 @@
+<div class="form-group">
+  <label for="title">Title</label>
+  <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+  <label for="rating">Rating</label>
+  <textarea name="rating" id="rating" class="form-control"><%= article.rating %></textarea>
+</div>
+<div class="form-group">
+  <label for="summary">Summary</label>
+  <textarea required name="summary" id="summary" class="form-control"><%= article.summary %></textarea>
+</div>
+
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
